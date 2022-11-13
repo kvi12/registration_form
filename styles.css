@@ -1,0 +1,13 @@
+h1 {
+    align-self: center;
+}
+body {
+background-color: bisque;
+}
+
+.main {
+
+    width: 1200px;
+    
+    background-color: aqua;
+}
