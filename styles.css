@@ -4,7 +4,7 @@
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
 }
-h1 {
+h1 p {
   align-self: center;
 }
 
@@ -31,7 +31,6 @@ body::before {
     rgba(136, 136, 206, 0.7)
     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg)
   );
-
 }
 *,
 *::before,
@@ -39,11 +38,24 @@ body::before {
   box-sizing: border-box;
 }
 .container {
-
-    width: 100%;
-    margin: 3.125rem auto 0 auto;
-    @media (min-width) {
-        max-width: 540px;
-        
-    }
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+}
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+.text-center {
+  text-align: center;
+}
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
 }
